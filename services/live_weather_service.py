@@ -11,5 +11,4 @@ async def get_live_report(location: Location):
         resp = await client.get(url)
         resp.raise_for_status()
         data = resp.json()
-        print(data)
     return data
